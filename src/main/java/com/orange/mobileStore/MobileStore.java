@@ -24,7 +24,7 @@ public class MobileStore {
         phone1.setCompanyName("Samsung");
         phones.add(phone1);
 
-        phone1.setModel("Sony Xperia Z4");
+        phone1.setModel("Sony Xperia Z3");
         phone1.setPrice(16330D);
         phone1.setCompanyName("Sony");
         phones.add(phone1);
