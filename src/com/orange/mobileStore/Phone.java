@@ -15,7 +15,7 @@ public class Phone {
 
     }
 
-    public String getModel() {
+    public String getModel(Phone phone4) {
         return this.model;
     }
 
@@ -30,4 +30,6 @@ public class Phone {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+
 }

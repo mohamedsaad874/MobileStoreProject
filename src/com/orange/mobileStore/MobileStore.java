@@ -5,6 +5,12 @@ import java.util.ArrayList;
 public class MobileStore {
 
     public static void main(String[] args) {
+        Store store1 = new Store();
+
+        Store.sellPhone("Samsung Galaxy S7/Edge");
+        Store.sellTablet("Samsung Galaxy Tab S6");
+
+
         MobileStore store = new MobileStore();
 
         ArrayList<Phone> phones = new ArrayList<Phone>();
@@ -32,10 +38,11 @@ public class MobileStore {
         phone4.setPrice(16330D);
         phone4.setCompanyName("Sony");
         phones.add(phone4);
-        for(int i = 0; i < phones.size(); i++)
-        {
-            System.out.println(phones.get(i));
-        }
+//        for(int i = 0; i < phones.size(); i++)
+//        {
+//            System.out.println(phones.get(i).getModel(phone1));
+//        }
+
         ArrayList<Tablet> tablets = new ArrayList<>();
         Tablet tablet1 = new Tablet();
 
@@ -61,15 +68,12 @@ public class MobileStore {
         tablet4.setPrice(50000D);
         tablet4.setCompanyName("Huawei");
         tablets.add(tablet4);
-        for(int i = 0; i < tablets.size(); i++)
-        {
-            System.out.println(tablets.get(i));
-        }
-
-
-
+//        for(int i = 0; i < tablets.size(); i++)
+//        {
+//            System.out.println(tablets.get(i).getModel(tablet3));
+//        }
 
     }
 
+    }
 
-}

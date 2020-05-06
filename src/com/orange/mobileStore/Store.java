@@ -1,13 +1,56 @@
 package com.orange.mobileStore;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Store {
-    private List<Phone> phones;
+    private  List<Phone> phones;
     private List<Tablet> tablets;
-    private int phone;
-    private int tablet;
-    private double price;
+
+
+    public static void sellPhone(String Model) {
+
+    }
+
+    public static void sellTablet(String Model) {
+        ArrayList<Tablet> tablets = new ArrayList<>();
+        Tablet tablet1 = new Tablet();
+
+        tablet1.setModel("Samsung Galaxy Tab S6");
+        tablet1.setPrice(10034D);
+        tablet1.setCompanyName("Samsung");
+        tablets.add(tablet1);
+
+        Tablet tablet2 = new Tablet();
+        tablet2.setModel("Asus ZenPad 3S 10");
+        tablet2.setPrice(10230D);
+        tablet2.setCompanyName("Asus");
+        tablets.add(tablet2);
+
+        Tablet tablet3 = new Tablet();
+        tablet3.setModel("Lenovo Yoga Tab 3 Pro");
+        tablet3.setPrice(30000D);
+        tablet3.setCompanyName("Lenovo");
+        tablets.add(tablet3);
+
+        Tablet tablet4 = new Tablet();
+        tablet4.setModel("Huawei MediaPad M5 8.4");
+        tablet4.setPrice(50000D);
+        tablet4.setCompanyName("Huawei");
+        tablets.add(tablet4);
+        for(int i = 0; i < tablets.size(); i++)
+        {
+            if (Model.equals(tablet1)){
+            System.out.println(tablet1+ " - is of type " + "audio");
+        }else {
+                System.out.println("no found");
+            }
+        }
+
+    }
+
+
 
 
     public void addPhonesToStore(Phone phone) {
@@ -16,67 +59,6 @@ public class Store {
 
     public void addTabletToStore(Tablet tablet) {tablets.add(tablet);}
 
-    public Store( int tabletIn,int phoneIn, double priceIn) {
-        phone = phoneIn;
-        tablet = tabletIn;
-        price = priceIn;
-
-    }
-
-        public double sellPhone(int phoneIn) {
-
-            while (phoneIn < 0 || phoneIn > phone) {
-                return -0.0;
-
-            }
-            if(phoneIn < phone) {
-
-                this.phone = this.phone - phoneIn;
-
-                double totalPrice = phoneIn * this.price;
-
-                return totalPrice;
-
-            }  else {
-
-                return 0.0;
-
-            }
-
-        }
 
 
-    public double sellTablet(int tabletIn) {
-        while (tabletIn < 0 || tabletIn > tablet) {
-            return -0.0;
-
-        }
-        if(tabletIn < tablet) {
-
-            this.tablet = this.tablet - tabletIn;
-
-            double totalPrice = tabletIn * this.price;
-
-            return totalPrice;
-
-        }  else {
-
-            return 0.0;
-
-        }
-    }
-    public void setPrice(double priceIn) {
-        this.price = priceIn;
-    }
-    public int getPhone() {
-        return this.phone;
-
-    }
-    public int getTablet() {
-        return this.tablet;
-
-    }
-    public double getPrice() {
-        return this.price;
-    }
-    }
+}

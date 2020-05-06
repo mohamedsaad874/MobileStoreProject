@@ -1,5 +1,7 @@
 package com.orange.mobileStore;
 
+import java.util.List;
+
 public class Tablet {
     private String companyname;
     private String model;
@@ -14,7 +16,7 @@ public class Tablet {
 
     }
 
-    public String getModel() {
+    public String getModel(List<Tablet> tablet3) {
         return this.model;
     }
 
