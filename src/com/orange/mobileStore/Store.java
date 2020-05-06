@@ -17,7 +17,7 @@ public class Store {
 
 if (tabletModel.equals(tablet.getModel())){
 removeTabletFromStore(tablet);
-    System.out.println("sss");
+    System.out.println("Tablet Sold ");
 }
    }
             }
