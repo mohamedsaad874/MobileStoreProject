@@ -16,7 +16,7 @@ public class Tablet {
 
     }
 
-    public String getModel(List<Tablet> tablet3) {
+    public String getModel() {
         return this.model;
     }
 
@@ -32,4 +32,6 @@ public class Tablet {
 
         this.price = price;
     }
+
+
 }
